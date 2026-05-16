@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPORTPI - Offline</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+          sans-serif;
+        background: linear-gradient(135deg, #4169E1 0%, #FF8C42 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .container {
+        text-align: center;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        max-width: 500px;
+      }
+      h1 {
+        color: #4169E1;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      .icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+      .status {
+        background: #f0f0f0;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-size: 0.9rem;
+        color: #666;
+      }
+      .hint {
+        color: #999;
+        font-size: 0.9rem;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">📡</div>
+      <h1>No Connection</h1>
+      <p>You appear to be offline. Some features may be limited.</p>
+      <div class="status">
+        <strong>Good news!</strong> Your activities are saved locally and will sync when you're back online.
+      </div>
+      <p>Your Pi earnings and activity data are stored safely on your device.</p>
+      <div class="hint">Try checking your internet connection or refresh the page once you're online.</div>
+    </div>
+  </body>
+</html>
