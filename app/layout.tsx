@@ -59,14 +59,10 @@ export default function RootLayout({
           type="image/svg+xml"
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%234169E1' width='192' height='192'/><text x='50%' y='50%' font-size='120' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>π</text></svg>"
         />
-
         <link
           rel="apple-touch-icon"
           href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%234169E1' width='180' height='180' rx='40'/><text x='90' y='90' font-size='120' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='central'>π</text></svg>"
         />
-
-        {/* PI SDK (FIXED - Client Component) */}
-        <PiSdkLoader />
 
         {/* Fonts */}
         <style>{`
@@ -79,6 +75,8 @@ export default function RootLayout({
       </head>
 
       <body className="bg-background">
+        {/* Load and initialize the Pi SDK on the client, before app content. */}
+        <PiSdkLoader />
         <PWAInstaller />
         <AppWrapper>{children}</AppWrapper>
         <SpeedInsights />
